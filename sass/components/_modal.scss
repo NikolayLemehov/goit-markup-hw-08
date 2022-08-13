@@ -1,0 +1,47 @@
+.modal {
+  position: relative;
+  width: 450px;
+  padding: 40px;
+  background-color: $color-white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scale(1);
+  transition: transform $transition;
+
+  [data-modal].is-hidden & {
+    transform: scale(0.9);
+  }
+
+  @media screen and (min-width: $vp-desk) {
+    width: 528px;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba($color-black, 0.1);
+  border-radius: 50%;
+  color: $color-black;
+  background-color: transparent;
+  transition: color $transition;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-active;
+  }
+}
+
+.modal__close-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 11px;
+  height: 11px;
+}

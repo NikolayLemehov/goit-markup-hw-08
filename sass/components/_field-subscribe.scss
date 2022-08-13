@@ -1,0 +1,37 @@
+.field-subscribe {
+  display: block;
+  @media screen and (max-width: ($vp-tab - 1)) {
+  }
+}
+
+.field-subscribe__input {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: inherit;
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color $transition;
+  outline: none;
+
+  @media screen and (min-width: $vp-tab) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $vp-desk) {
+    width: 358px;
+  }
+
+  &:focus {
+    border-color: $color-active;
+  }
+
+  &::placeholder {
+    color: rgba($color-white, 0.6);
+  }
+}

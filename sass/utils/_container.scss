@@ -1,0 +1,18 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $padding-container;
+  padding-left: $padding-container;
+
+  @media screen and (min-width: $vp-mob) {
+    width: $vp-mob;
+  }
+
+  @media screen and (min-width: $vp-tab) {
+    width: $vp-tab;
+  }
+
+  @media screen and (min-width: $vp-desk) {
+    width: $vp-desk;
+  }
+}

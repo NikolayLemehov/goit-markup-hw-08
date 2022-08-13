@@ -1,0 +1,41 @@
+.form-callback {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-callback__title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+
+  @media screen and (min-width: $vp-desk) {
+    line-height: 1.15;
+  }
+}
+
+.form-callback__main-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+
+  @media screen and (min-width: $vp-desk) {
+    margin-bottom: 20px;
+  }
+}
+
+.form-callback__agreement {
+  width: 425px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $vp-desk) {
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.form-callback__btn {
+  align-self: center;
+}

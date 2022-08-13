@@ -1,0 +1,143 @@
+.contact-links {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 22px;
+
+  @media screen and (min-width: $vp-mob) {
+    gap: 32px;
+  }
+
+  @media screen and (min-width: $vp-tab) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: $vp-desk) {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  &--footer {
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $vp-desk) {
+      align-items: flex-start;
+    }
+  }
+}
+
+.contact-links__item--footer:not(:last-of-type) {
+  @media screen and (min-width: $vp-desk) {
+    //margin-bottom: 9px;
+  }
+}
+
+.contact-links__link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color $transition;
+
+  @media screen and (max-width: ($vp-tab - 1)) {
+    .header__menu-container & {
+      font-size: 24px;
+
+      &--tel {
+        line-height: 1.18;
+        color: $color-active;
+
+        @media (min-width: $vp-mob) {
+          font-size: 34px;
+        }
+      }
+
+      &--mail {
+        line-height: 1.17;
+        color: $color-light-text;
+      }
+    }
+  }
+
+  @media screen and (min-width: $vp-tab) {
+    font-size: 12px;
+    line-height: 1.14;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    color: $color-light-text;
+
+    &:hover,
+    &:focus {
+      color: $color-active;
+    }
+  }
+
+  @media screen and (min-width: $vp-desk) {
+    padding: 32px 0;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  &--footer {
+    color: $color-light-text;
+
+    &:hover,
+    &:focus {
+      color: $color-active;
+    }
+
+    @media screen and (min-width: $vp-tab) {
+      font-size: 14px;
+      padding: 0;
+      line-height: inherit;
+    }
+  }
+}
+
+.contact-links__icon {
+  @media screen and (max-width: ($vp-tab - 1)) {
+    display: none;
+  }
+
+  &--phone {
+    @media screen and (min-width: $vp-tab) {
+      width: 10px;
+      height: 14px;
+    }
+
+    @media screen and (min-width: $vp-desk) {
+      width: 10px;
+      height: 16px;
+    }
+  }
+
+  &--email {
+    @media screen and (min-width: $vp-tab) {
+      width: 14px;
+      height: 10px;
+    }
+
+    @media screen and (min-width: $vp-desk) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+}
+
+.contact-links__use {
+  &--mob {
+    @media screen and (min-width: $vp-desk) {
+      display: none;
+    }
+  }
+
+  &--desk {
+    @media screen and (max-width: ($vp-desk - 1)) {
+      display: none;
+    }
+  }
+}

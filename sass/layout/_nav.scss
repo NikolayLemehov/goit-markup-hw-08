@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+
+  @media screen and (max-width: ($vp-tab - 1)) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $padding-container;
+    padding-left: $padding-container;
+  }
+
+  @media screen and (min-width: $vp-mob) {
+    width: $vp-mob;
+  }
+
+  @media screen and (min-width: $vp-tab) {
+    flex-direction: row;
+    align-items: center;
+    width: unset;
+  }
+}
+
+.nav__contact-links {
+  @media screen and (max-width: ($vp-tab - 1)) {
+    margin-top: auto;
+  }
+}
+
+.nav__social {
+  &.social {
+    @media screen and (min-width: $vp-tab) {
+      display: none;
+    }
+  }
+}

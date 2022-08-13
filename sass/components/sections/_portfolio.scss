@@ -1,0 +1,41 @@
+.portfolio__controls {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $vp-tab) {
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $vp-desk) {
+    margin-bottom: 50px;
+  }
+}
+
+.portfolio__list {
+  --gap: 30px;
+
+  @media screen and (min-width: $vp-tab) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+  }
+}
+
+.portfolio__item {
+  @media screen and (max-width: ($vp-tab - 1)) {
+    &:not(:last-child) {
+      margin-bottom: var(--gap);
+    }
+  }
+
+  @media screen and (min-width: $vp-tab) {
+    --columns: 2;
+    display: flex;
+    width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+  }
+
+  @media screen and (min-width: $vp-desk) {
+    --columns: 3;
+  }
+}

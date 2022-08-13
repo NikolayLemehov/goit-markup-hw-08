@@ -1,0 +1,44 @@
+.promo__list {
+  --gap: 30px;
+
+  @media screen and (min-width: $vp-tab) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+  }
+
+  @media screen and (min-width: $vp-desk) {
+  }
+}
+
+.promo__item {
+  @media screen and (max-width: ($vp-tab - 1)) {
+    &:not(:last-child) {
+      margin-bottom: var(--gap);
+    }
+  }
+
+  @media screen and (min-width: $vp-tab) {
+    --columns: 2;
+    width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+  }
+
+  @media screen and (min-width: $vp-desk) {
+    --columns: 4;
+  }
+
+}
+
+.promo__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background: $color-light-2;
+  border-radius: 4px;
+}
+
+.promo__icon {
+  display: block;
+}

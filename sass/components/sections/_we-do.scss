@@ -1,0 +1,36 @@
+.we-do {
+  @media screen and (max-width: ($vp-desk - 1)) {
+    display: none;
+  }
+}
+
+.we-do__list {
+  --gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.we-do__item {
+  --columns: 3;
+  position: relative;
+  width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+}
+
+.we-do__img-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: rgba($color-dark-bg, 0.8);
+}

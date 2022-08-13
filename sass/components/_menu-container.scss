@@ -1,0 +1,13 @@
+.menu-container {
+  //display: flex;
+  padding: 48px 20px;
+  background-color: $color-white;
+
+  @media screen and (min-width: $vp-mob) {
+    padding: 48px 40px;
+  }
+
+  @media screen and (min-width: $vp-tab) {
+    padding: 0;
+  }
+}

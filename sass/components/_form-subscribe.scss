@@ -1,0 +1,44 @@
+.form-subscribe__row {
+  @media screen and (min-width: $vp-tab) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $vp-desk) {
+    gap: 12px;
+    flex-direction: row;
+  }
+}
+
+.form-subscribe__field {
+  @media screen and (max-width: ($vp-tab - 1)) {
+    margin-bottom: 20px;
+  }
+}
+
+.form-subscribe__submit-btn {
+  padding: 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  color: $color-white;
+  background-color: $color-active;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: color $transition, background-color $transition;
+
+  &:hover,
+  &:focus {
+    color: $color-active;
+    background-color: $color-white;
+  }
+}
+
+.form-subscribe__btn {
+  align-self: center;
+}

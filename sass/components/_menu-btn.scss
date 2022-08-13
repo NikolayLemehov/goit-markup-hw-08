@@ -1,0 +1,39 @@
+.menu-btn {
+  @media screen and (max-width: ($vp-tab - 1)) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+      color: $color-active;
+    }
+  }
+
+  @media screen and (min-width: $vp-tab) {
+    display: none;
+  }
+}
+
+.menu-btn__icon {
+  display: block;
+
+  &--burger {
+    .menu-btn[aria-expanded="true"] & {
+      display: none;
+    }
+  }
+
+  &--close {
+    .menu-btn[aria-expanded="false"] & {
+      display: none;
+    }
+  }
+}
+
+

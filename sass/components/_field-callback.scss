@@ -1,0 +1,66 @@
+.field-callback {
+  padding-top: 18px;
+}
+
+.field-callback__label-wrapper {
+  position: relative;
+  display: block;
+}
+
+.field-callback__label {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  transform: translateY(-100%);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $color-light-text;
+}
+
+.field-callback__input {
+  width: 100%;
+  padding: 12px 16px 12px 42px;
+  color: $color-black;
+  border: 1px solid rgba($color-main-text, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color $transition;
+
+  .field-callback__label-wrapper:focus-within & {
+    border-color: $color-active;
+  }
+
+  &--text-area {
+    height: 120px;
+    padding-left: 16px;
+    resize: none;
+    //font-size: 14px;
+    line-height: 1.14;
+
+    @media screen and (min-width: $vp-desk) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+  }
+
+  &::placeholder {
+    color: rgba($color-light-text, 0.5);
+  }
+}
+
+.field-callback__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: block;
+  width: 18px;
+  height: 18px;
+  color: $color-black;
+  transition: color $transition;
+
+  .field-callback__label-wrapper:focus-within & {
+    color: $color-active;
+  }
+}

@@ -1,0 +1,37 @@
+// Colors
+
+$color-black:                       #000;
+$color-white:                       #fff;
+$color-main-text:                   #212121;
+$color-dark-bg:                     #2f303a;
+$color-light-text:                  #757575;
+$color-light-2:                     #f5f4fa;
+$color-light-3:                     #ececec;
+$color-active:                      #2196f3;
+$color-icon-1:                      #afb1b8;
+$transition:                        cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+// Fonts
+
+$font-primary:                      "Roboto", Arial, sans-serif;
+$font-secondary:                    "Raleway", Arial, sans-serif;
+
+// Retina
+
+$retina-dpi:                        192dpi;
+$retina-dppx:                       2dppx;
+
+// Breakpoints
+
+$vp-mob:                            480px;
+$vp-tab:                            768px;
+$vp-desk:                           1200px;
+
+// Container padding
+
+$padding-container:                 15px;
+
+// Section padding
+
+$section-container-desk:            94px;
+$section-container-mob:             60px;
