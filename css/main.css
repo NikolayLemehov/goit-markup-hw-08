@@ -913,7 +913,7 @@ img {
 .modal {
   position: relative;
   max-width: 450px;
-  padding: 40px;
+  padding: 40px 20px;
   background-color: #fff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
@@ -928,6 +928,11 @@ img {
 [data-modal].is-hidden .modal {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    padding: 40px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
