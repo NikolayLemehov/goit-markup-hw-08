@@ -1,19 +1,27 @@
 .backdrop {
   position: fixed;
+  z-index: 100;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
   background-color: rgba($color-black, 0.2);
   opacity: 1;
   transition: opacity $transition, visibility $transition;
 }
 
 .backdrop__modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  overflow: auto;
 }
 
 [data-modal].is-hidden {

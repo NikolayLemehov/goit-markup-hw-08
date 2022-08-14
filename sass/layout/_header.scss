@@ -1,11 +1,7 @@
 .header {
+  position: relative;
+  z-index: 5;
   outline: 1px solid $color-light-3;
-
-  @media screen and (max-width: $vp-mob) {
-    position: relative;
-  }
-
-  // &--is-open-menu {}
 }
 
 .header__container {

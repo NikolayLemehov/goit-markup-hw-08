@@ -26,7 +26,7 @@
 }
 
 .form-callback__agreement {
-  width: 425px;
+  max-width: 425px;
   margin-bottom: 25px;
 
   @media screen and (min-width: $vp-desk) {
