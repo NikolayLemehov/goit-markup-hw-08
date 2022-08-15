@@ -9,6 +9,8 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  padding: 0 15px;
+
   background-color: rgba($color-black, 0.2);
   opacity: 1;
   transition: opacity $transition, visibility $transition;

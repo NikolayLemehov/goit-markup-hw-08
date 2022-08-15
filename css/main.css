@@ -79,6 +79,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: auto;
+  padding: 0 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms, visibility cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -912,7 +913,7 @@ img {
 
 .modal {
   position: relative;
-  max-width: 450px;
+  max-width: 528px;
   padding: 40px 20px;
   background-color: #fff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
@@ -934,12 +935,6 @@ img {
     padding: 40px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-  }
-}
-
 .modal__close {
   position: absolute;
   top: 8px;
